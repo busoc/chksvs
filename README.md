@@ -34,3 +34,11 @@ linux$ find share/upi/XYZ/90/ | chksvs -k -p 64
 powershell$ chksvs.exe -p 1024 -w 4 -d .\data\svs\ file0...file1
 powershell$  Get-ChildItem -Path .\tmp\blocks\ -File | Resolve-Path -Relative | chksvs.exe -p 1024 -w 4 -d .\data\svs\
 </pre>
+
+to compile the tool, go compiler (version 1.13 www.golang.org) is needed and the golang.org/x/sync/semaphore package should be install.
+
+<pre>
+$ go get golang.org/x/sync/semaphore
+$ go build -o chksvs chksvs.go // linux
+$ go build -o chksvs.exe chksvs.go // windows
+</pre>
