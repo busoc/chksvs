@@ -1,4 +1,6 @@
 # chksvs
+:warning: *this software and its source code are released without warranty on the validity of its results. No validations and integration tests have been performed internally by our teams. Moreover, more development efforts are not foreseen on this software.*
+
 utility tool to convert raw SVS data (stored by hadock) to csv files
 
 the tool works as follow:
